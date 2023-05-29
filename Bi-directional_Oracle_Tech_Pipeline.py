@@ -28,11 +28,11 @@ from email import encoders
 
 class myoracleconnection(object):
     def __init__(self):
-        self.user = 'CAT_WORK'
-        self.password = 'r8t7k3n6v'
-        self.host = 'mshsd-whp.uprd.usoncology.unx'
-        self.port = '1530'
-        self.service_name = 'mshedwp'
+        self.user = 'DATABASE1'
+        self.password = 'xxxxx'
+        self.host = 'host_url'
+        self.port = '1630'
+        self.service_name = 'some_service'
     def connecthandler(self):
         self.con = cx_Oracle.connect(self.user, self.password, '{}:{}/{}'.format(self.host,self.port,self.service_name))
         return self.con
